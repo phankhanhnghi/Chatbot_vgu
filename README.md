@@ -67,10 +67,6 @@ Here are some example queries to test with the chatbot:
 - **Enhanced NLP**: Improving the bot’s ability to understand complex, multi-part questions.
 - **Data Visualization**: Integrating visual graphs to display trends in Apple’s financial performance over time.
 
-## License
-
-This project is licensed under the MIT License. See `LICENSE` for more details.
-
 ## Acknowledgments
 
 Special thanks to the Chainlit framework for providing an easy-to-use interface for chatbot development.
