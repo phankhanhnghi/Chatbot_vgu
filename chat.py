@@ -17,8 +17,9 @@ from dotenv import load_dotenv
 from typing import Optional
 
 
+
 # Download necessary nltk libraries
-# nltk.download('all')
+nltk.download('all')
 
 # Load environment variables from the .env file
 load_dotenv(dotenv_path="./.env")
@@ -112,7 +113,12 @@ def auth_callback(username: str, password: str):
         )
     else:
         return None
+from chainlit.types import ThreadDict
 
+@cl.on_chat_resume
+async def on_chat_resume(thread: ThreadDict):
+    print("The user resumed a previous chat session!")
+    
 @cl.on_chat_start
 async def start():
     await cl.Message(
